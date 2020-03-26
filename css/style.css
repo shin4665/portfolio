@@ -381,7 +381,12 @@ span{
   margin:0 100px 0 90px;
 }
 
-
+.tool{
+  font-size: 20px;
+  background-color: #4E4E4E;
+  text-align: center;
+  height: 30px;
+}
 
 /* Footer */
 
