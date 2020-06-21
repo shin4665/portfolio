@@ -1,0 +1,397 @@
+/* finish.html */
+
+
+body{
+  text-align: center;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+a:hover{
+  opacity: 1.0;
+}
+
+#navbar{
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 10px 180px;
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+  float:left;
+  margin: initial;
+}
+
+.contact{
+  float: right;
+  margin: initial;
+}
+.sns{
+  font-size: 10px;
+  display:flex;
+  width:240px;
+  margin:0 auto;
+  padding: 0 auto;
+}
+
+.sns p {
+  width: 80px;
+}
+
+.section_sns{
+  font-size: 10px;
+  display: flex;
+  margin: 0 auto;
+  width: 360px;
+  align-items:center;
+  justify-content:center;
+}
+.section_sns p {
+  width: 80px;
+}
+
+.profile{
+  margin: 40px 0;
+}
+.profile_box{
+  margin: 40px 0;
+}
+
+#contact p{
+  font-size:12px;
+}
+
+.blank{
+  margin-top: 120px;
+  border-bottom:4px dotted #181716;
+  opacity: 0.6;
+}
+
+.copyright{
+  width: 280px;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+footer{
+  position:relative;
+  bottom: 0px;
+}
+
+
+@media screen and (min-width: 767px) {
+  .br-pc {
+    display:block!important;
+  }
+  .br-sp {
+    display:none;
+  }
+  .br-tab {
+    display:none;
+  }
+
+
+.flexbox{
+  margin: 0 auto;
+  display: -webkit-flex;
+  display:flex;
+}
+.right_side{
+  background-color:#f6f6f4;
+  flex: 1;
+}
+
+.center_side{
+  background-color:white;
+  flex: 3;
+}
+.left_side{
+  background-color:#f6f6f4;
+  flex: 1;
+}
+
+.body_finish{
+  line-height:30px;
+}
+
+.noinfection{
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.border_left{
+  padding: 12px;
+  font-size: 20px;
+  border-left:10px solid #fa8;
+  display:inline-block;
+
+}
+.border_left2{
+  padding: 10px;
+  border-left:4px solid #fa8;
+  display:inline-block;
+}
+
+.yellow_box{
+  border: 3px solid #ffe3b3;
+  background-color: #ffffeb;
+  border-radius: 8px;
+  display:block;
+  padding: 2rem;
+  font-size: 14px;
+}
+
+.anxiety{
+  margin: 80px 0;
+}
+
+.anxiety a, #consultation a, #consultation2 a {
+  color: rgba(91, 5, 5, 1);
+}
+
+.COVID{
+  margin: 80px 0 ;
+}
+
+.attention{
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#consultation{
+  margin: 80px 0 80px;
+}
+
+#consultation2{
+  margin: 80px 0 80px;
+}
+
+.beforeconsul{
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.mini_title{
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 2px 8px;
+  display: inline-block;
+  background-color: rgba(176, 179, 209, 0.39);
+}
+
+
+.ref{
+  margin: 200px 0 80px ;
+}
+
+.reference{
+  font-size: 12px;
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.profile{
+  margin: 120px 0 40px;
+}
+
+#pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#pagetop a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 768px){
+  .br-pc {
+    display:none;
+  }
+  .br-sp {
+    display:none;
+  }
+  .br-tab {
+    display:block!important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .br-pc {
+    display:none;
+  }
+  .br-sp {
+    display:block!important;
+  }
+  .br-tab {
+    display:none;
+  }
+
+*{
+  box-sizing: border-box;
+  font-size: 10px;
+  word-wrap: break-word;
+}
+
+#navbar{
+  line-height: 30px;
+  padding: 10px 30px;
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.4);
+}
+
+.body_finish{
+  line-height:30px;
+}
+
+.noinfection{
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  line-height:20px;
+}
+
+.border_left{
+  padding: 12px;
+  font-size: 20px;
+  border-left:10px solid #fa8;
+  display:inline-block;
+}
+.border_left2{
+  padding: 10px;
+  border-left:4px solid #fa8;
+  display:inline-block;
+}
+
+.yellow_box{
+  border: 3px solid #ffe3b3;
+  background-color: #ffffeb;
+  border-radius: 8px;
+  display:inline-block;
+  padding: 20px;
+}
+
+.anxiety{
+  margin: 40px 0;
+}
+
+.anxiety a, #consultation a, #consultation2 a {
+  color: rgba(91, 5, 5, 1);
+}
+
+.COVID{
+  margin: 80px 0 ;
+}
+
+.attention{
+  text-align: left;
+  margin: 0 auto;
+}
+
+.attention br{
+  display:none;
+}
+
+#consultation{
+  margin: 40px 0;
+}
+
+#consultation2{
+  margin: 40px 0;
+}
+
+.beforeconsul{
+  margin: 0 auto;
+}
+.beforeconsul br{
+  display: none;
+}
+
+.mini_title{
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding: 2px 8px;
+  display: inline-block;
+  background-color: rgba(176, 179, 209, 0.39);
+}
+
+.ref{
+  margin: 40px 0;
+}
+
+.reference{
+  font-size: 0.7rem;
+  margin: 0 auto;
+  line-height: 2.5rem;
+}
+
+#pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#pagetop a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, user-scalable=yes">
+  <title>COVID-19 感染チェッカー</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicons -->
+  <link rel="icon" href="https://img.icons8.com/ios/50/000000/geometric-flowers.png" >
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <div id="navbar" onclick="">
+    <p class="logo" ><a href="index.html">COVID-19 感染チェッカー</a></p>
+    <p class="contact"><a href="finish.html#contact">お問い合わせ</a></p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/sample.js"></script>
+</head>
+
+<body>
+  <div class="main" onclick="">
+
+    <div id="page">
+      <div id=header>
+        <h1>コロナウイルスの相談基準<br class="br-sp" />チェックツール</h1>
+      </div>
+      <div class="container">
+        <div class="box">
+          <br>このサイトはご自身でコロナウイルスへの疑いを持っている方への、
+          <br>公共機関に相談するべきかを判断できるチェックツールです。
+          <br>判断の目安にご活用ください。
+        </div>
+      </div>
+
+      <button id="BUTTON">START</button>
+    </div>
+
+
+    <div id="page2" class="inactive">
+      <div class="main2">
+        <div class="container2">
+          <br>緊急性の高い13の症状<br>
+          <br>ご本人やご家族が原則１日２回確認し、
+          <br>当てはまる症状にチェックを入れてください
+        </div>
+
+        <div class="checkbox">
+
+          <div>
+            <form  id="checkbox1" >
+              <p class="littletitle" >【表情・外見】</p>
+              <label><input type="checkbox" name="checkbox1" value="a">顔色が明らかに悪い</label><br>
+              <label><input type="checkbox" name="checkbox1" value="b">唇が紫色になっている</label><br>
+              <label><input type="checkbox" name="checkbox1" value="c">いつもと違う、様子がおかしい</label><br>
+              <p class="littletitle">【息苦しさなど】</p>
+              <label><input type="checkbox" name="checkbox1" value="d">息が荒くなった（呼吸数が多くなった）</label><br>
+              <label><input type="checkbox" name="checkbox1" value="e">急に息苦しくなった</label><br>
+              <label><input type="checkbox" name="checkbox1" value="f">生活をしていて少し動くと息苦しい</label><br>
+              <label><input type="checkbox" name="checkbox1" value="g">胸の痛みがある</label><br>
+              <label><input type="checkbox" name="checkbox1" value="h">横になれない。座らないと息ができない</label><br>
+              <label><input type="checkbox" name="checkbox1" value="i">肩で息をしている</label><br>
+              <label><input type="checkbox" name="checkbox1" value="j">突然（２時間以内を目安）ゼーゼーしはじめた</label><br>
+              <p class="littletitle">【意識障害など】</p>
+              <label><input type="checkbox" name="checkbox1" value="k">ぼんやりしている（反応が弱い）</label><br>
+              <label><input type="checkbox" name="checkbox1" value="l">もうろうとしている（返事がない）</label><br>
+              <label><input type="checkbox" name="checkbox1" value="n">脈がとぶ、脈のリズムが乱れる感じがする</label><br>
+            </form>
+          </div>
+        </div>
+
+        <br><br><p class="announcement">（厚生労働省は４月29日に発表）</p>
+        <br><button id="BUTTON2" name="" value="finish">完了</button>
+
+      </div>
+    </div>
+
+
+    <div id="page3" class="inactive">
+      <div class="main3">
+        <div class="container3">
+          <p class="page3title">以下のいずれかに当てはまりますか？</p>
+          <br>疑似症の要件【１】【２】
+          <br>【１】発症から２週間以内に「新型コロナウイルス感染者」と
+
+          <span class="css-fukidashi">
+            <span class="text" ontouchstart=””>濃厚接触</span>
+            <span class="fukidashi touch-hover display-none">1メートル以内かつ15分以上の接触(会話も含む)</span>
+          </span>をした者で、
+          <br class="br-pc" >①発熱 または ②呼吸器症状を有する方
+          <br>【２】発症から２週間以内に「湖北省又は浙江省を訪問した者」または
+          <br>「湖北省又は浙江省への渡航歴がある者と濃厚接触をした者」で
+          <br>①発熱３７．５度以上 かつ ②呼吸器症状を有する方
+
+        </div>
+        <div  id="BUTTON3" class="buttonbox">
+          <button  id="BUTTON3YES" class="button3" name="" value="finish">はい</button>
+          <button id="BUTTON3NO" class="button3" name="" value="finish">いいえ</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="page4" class="inactive">
+      <div class="page4">
+        <div class="container4">
+          <p>重症化のしやすさの確認</p>
+          下記の項目(基礎疾患など)にあてはまりますか
+          <div class="basal disease">
+            糖尿病<br>
+            心不全<br>
+            呼吸器疾患（喘息を含む）<br>
+            心不全など慢性の循環器疾患<br>
+            慢性の肝臓疾患<br>
+            透析加療中<br>
+            免疫抑制剤や抗がん剤を用いている　など<br>
+            <br>
+            妊婦の方<br>
+            高齢者の方<br>
+          </div>
+          <p class="heavy"><a href="finish.html#consultation">
+            ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
+          </a></p>
+          <span id="BUTTON4">
+            <button id="BUTTON4YES" class="button3" name="" value="finish">はい</button>
+            <button id="BUTTON4NO" class="button3" name="" value="finish">いいえ</button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="page5" class="inactive">
+      <div class="main5">
+        <div class="container5">
+          <p class="page5title">以下のような比較的軽いかぜの症状が４日（又は数日）以上続く症状にチェックを入れてください
+            <p/>
+            <div class="smallcheckbox">
+              <label><input type="checkbox" name="checkbox2" value="発熱">発熱<br></label>
+              <label><input type="checkbox" name="checkbox2" value="せき">せき<br></label>
+              <label><input type="checkbox" name="checkbox2" value="息切れ">息切れ<br></label>
+              <span class="css-fukidashi2">
+                <span id="close_css_fukidashi2">
+                  <input type="checkbox" name="checkbox2" value="味覚の異常">
+                  <span class="text" ontouchstart=””>味覚の異常</span>
+                  <span class="fukidashi2">症状の１つとして報告が相次いでいる「味覚や嗅覚の異常」については専門家の間で意見が分かれたため記載は見送られましたが、厚生労働省は異常を感じた場合には相談するよう呼びかけています。</span>
+                </span>
+              </span> <br>
+              <label><input type="checkbox" name="checkbox2" value="嗅覚の異常">嗅覚の異常<br></label>
+              <label><input type="checkbox" name="checkbox2" value="寒気や悪寒">寒気や悪寒<br></label>
+              <label><input type="checkbox" name="checkbox2" value="頭痛">頭痛<br></label>
+              <label><input type="checkbox" name="checkbox2" value="のどの痛み">のどの痛み<br></label>
+              <label><input type="checkbox" name="checkbox2" value="筋肉の痛み">筋肉の痛み<br></label>
+            </div>
+            <p class="heavy"><a href="finish.html#consultation">
+              ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
+            </a></p>
+
+            <button id="BUTTON5" name="" value="finish">完了</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 重症化ver -->
+
+      <div id="page6" class="inactive">
+        <div class="main6">
+          <div class="container6">
+            <p class="page6title">以下のような発熱や咳などの、比較的軽い風邪の症状がある場合は帰国者・接触者相談センターに御相談ください。<p/>
+              <div class="smallcheckbox">
+                <ul>
+                  <li>発熱  </li>
+                  <li>  せき</li>
+                  <li> 息切れ </li>
+                  <li>
+                    <span class="css-fukidashi3">
+                      <span class="text" ontouchstart=””>味覚の異常</span>
+                      <span class="fukidashi3">症状の１つとして報告が相次いでいる「味覚や嗅覚の異常」については専門家の間で意見が分かれたため記載は見送られましたが、厚生労働省は異常を感じた場合には相談するよう呼びかけています。</span>
+                    </span>
+                  </li>
+                  <li>嗅覚の異常  </li>
+                  <li> 寒気や悪寒 </li>
+                  <li> 頭痛 </li>
+                  <li> のどの痛み </li>
+                  <li> 筋肉の痛み </li>
+                </ul>
+              </div>
+              <p class="heavy"><a href="finish.html#consultation">
+                ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
+              </a></p>
+              
+              <div class="pregnant">
+                <p>妊婦の方へ</p>
+                妊婦の方については、念のため、重症化しやすい方と同様に、<br>
+                早めに帰国者・接触者相談センターに御相談ください。
+              </div>
+              <span id="BUUTON6"class="buttonbox">
+                <button id="BUTTON6YES" class="button3" name="" value="finish">相談する</button>
+                <button id="BUTTON6NO" class="button3" name="" value="finish">相談しない</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer onclick="">
+        <div class="sns">
+          <p><a target="blank" href="finish.html#contact">お問い合わせ</a></p>
+          <p><a target="blank" title="tweet this" href="https://twitter.com/intent/tweet"><i class="fab fa-twitter"></i>twitter</a></p>
+          <p>  <span id="fb-root"></span>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v7.0" nonce="FU7xn3KI"></script>
+            <span class="fb-share-button" data-href="http://covid-19check.shinsuke.site/" ><i class="fab fa-facebook-f"></i><a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcovid-19check.shinsuke.site%2F&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore">facebook</a></span></p>
+            </div>
+            <div class="copyright">
+              <p>&copy; Copyright © 2020 shinsuke.All Rights Reserved.</p>
+            </div>
+          </footer>
+
+          <script src="js/main.js"></script>
+        </body>
+
+        <!-- <a href="https://icons8.com/icon/XagaArJV1lHe/geometric-flowers">Geometric Flowers icon by Icons8</a> -->
+        </html>
