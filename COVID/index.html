@@ -39,13 +39,12 @@
     <div id="page2" class="inactive">
       <div class="main2">
         <div class="container2">
-          <br>緊急性の高い13の症状<br>
+          <p>緊急性の高い13の症状</p>
           <br>ご本人やご家族が原則１日２回確認し、
           <br>当てはまる症状にチェックを入れてください
         </div>
 
         <div class="checkbox">
-
           <div>
             <form  id="checkbox1" >
               <p class="littletitle" >【表情・外見】</p>
@@ -67,10 +66,8 @@
             </form>
           </div>
         </div>
-
-        <br><br><p class="announcement">（厚生労働省は４月29日に発表）</p>
-        <br><button id="BUTTON2" name="" value="finish">完了</button>
-
+        <p class="announcement">（厚生労働省は４月29日に発表）</p>
+        <div><button id="BUTTON2" value="finish">完了</button></div>
       </div>
     </div>
 
@@ -89,7 +86,6 @@
           <br>【２】発症から２週間以内に「湖北省又は浙江省を訪問した者」または
           <br>「湖北省又は浙江省への渡航歴がある者と濃厚接触をした者」で
           <br>①発熱３７．５度以上 かつ ②呼吸器症状を有する方
-
         </div>
         <div  id="BUTTON3" class="buttonbox">
           <button  id="BUTTON3YES" class="button3" name="" value="finish">はい</button>
@@ -103,24 +99,27 @@
         <div class="container4">
           <p>重症化のしやすさの確認</p>
           下記の項目(基礎疾患など)にあてはまりますか
-          <div class="basal disease">
-            糖尿病<br>
-            心不全<br>
-            呼吸器疾患（喘息を含む）<br>
-            心不全など慢性の循環器疾患<br>
-            慢性の肝臓疾患<br>
-            透析加療中<br>
-            免疫抑制剤や抗がん剤を用いている　など<br>
-            <br>
-            妊婦の方<br>
-            高齢者の方<br>
+          <div class="basal_disease">
+            <ul>
+              <li>糖尿病</li>
+              <li>心不全</li>
+              <li>呼吸器疾患（喘息を含む）</li>
+              <li>心不全など慢性の循環器疾患</li>
+              <li>慢性の肝臓疾患</li>
+              <li>透析加療中</li>
+              <li>免疫抑制剤や抗がん剤を用いている　など</li>
+            </ul>
+            <p>
+              妊婦の方<br>
+              高齢者の方<br>
+            </p>
           </div>
           <p class="heavy"><a href="finish.html#consultation">
             ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
           </a></p>
           <span id="BUTTON4">
-            <button id="BUTTON4YES" class="button3" name="" value="finish">はい</button>
-            <button id="BUTTON4NO" class="button3" name="" value="finish">いいえ</button>
+            <button id="BUTTON4YES" class="button3"  value="finish">はい</button>
+            <button id="BUTTON4NO" class="button3" value="finish">いいえ</button>
           </span>
         </div>
       </div>
@@ -129,8 +128,7 @@
     <div id="page5" class="inactive">
       <div class="main5">
         <div class="container5">
-          <p class="page5title">以下のような比較的軽いかぜの症状が４日（又は数日）以上続く症状にチェックを入れてください
-            <p/>
+          <p class="page5title">以下のような比較的軽いかぜの症状が４日（又は数日）以上続く症状にチェックを入れてください<p/>
             <div class="smallcheckbox">
               <label><input type="checkbox" name="checkbox2" value="発熱">発熱<br></label>
               <label><input type="checkbox" name="checkbox2" value="せき">せき<br></label>
@@ -149,9 +147,8 @@
               <label><input type="checkbox" name="checkbox2" value="筋肉の痛み">筋肉の痛み<br></label>
             </div>
             <p class="heavy"><a href="finish.html#consultation">
-              ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
-            </a></p>
-
+              ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら</a>
+            </p>
             <button id="BUTTON5" name="" value="finish">完了</button>
           </div>
         </div>
@@ -182,9 +179,8 @@
                 </ul>
               </div>
               <p class="heavy"><a href="finish.html#consultation">
-                ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら
-              </a></p>
-
+                ※強いだるさ（倦怠感）や息苦しさ（呼吸困難）、高熱などの強い症状がある場合はこちら </a>
+              </p>
               <div class="pregnant">
                 <p>妊婦の方へ</p>
                 妊婦の方については、念のため、重症化しやすい方と同様に、<br>
@@ -203,19 +199,18 @@
         <div class="sns">
           <p><a target="blank" href="finish.html#contact">お問い合わせ</a></p>
           <p><a target="blank" title="tweet this" href="https://twitter.com/intent/tweet"><i class="fab fa-twitter"></i>twitter</a></p>
-          <p>  <span id="fb-root"></span>
+          <p><span id="fb-root"></span>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v7.0" nonce="FU7xn3KI"></script>
             <span class="fb-share-button" data-href="http://covid-19check.shinsuke.site/" ><i class="fab fa-facebook-f"></i><a target="_blank"
               href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcovid-19check.shinsuke.site%2F&amp;src=sdkpreparse"
-              class="fb-xfbml-parse-ignore">facebook</a></span></p>
-            </div>
-            <div class="copyright">
-              <p>&copy; Copyright © 2020 shinsuke.All Rights Reserved.</p>
-            </div>
-          </footer>
+              class="fb-xfbml-parse-ignore">facebook</a></span>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>&copy; Copyright © 2020 shinsuke.All Rights Reserved.</p>
+          </div>
+        </footer>
 
-          <script src="js/main.js"></script>
-        </body>
-
-        <!-- <a href="https://icons8.com/icon/XagaArJV1lHe/geometric-flowers">Geometric Flowers icon by Icons8</a> -->
-        </html>
+        <script src="js/main.js"></script>
+      </body>
+      </html>

@@ -165,7 +165,7 @@ a:hover{
 }
 
 .ref{
-  margin: 200px 0 80px ;
+  margin: 200px 0 0px;
 }
 
 .reference{
@@ -175,8 +175,23 @@ a:hover{
   text-align: left;
 }
 
+.reference ul{
+  width: 40vw;
+  padding: 0;
+  margin: 20px auto;
+  line-height: 2rem;
+}
+
+.reference li{
+  list-style: none;
+}
+
 .profile{
-  margin: 120px 0 40px;
+  margin: 80px 0 40px;
+}
+
+.name{
+  margin: 40px 0;
 }
 
 #pagetop{
@@ -226,31 +241,12 @@ footer{
   bottom: 0px;
 }
 
-/* PC用レスポンシブ */
-@media screen and (min-width: 767px) {
-  .br-pc {
-    display:block!important;
-  }
 
-  .br-sp {
-    display:none;
-  }
-
-  .br-tab {
-    display:none;
-  }
-}
-
-   /* タブレット用レスポンシブ */
+/* タブレット用レスポンシブ */
 @media screen and (max-width: 768px){
-  .br-pc {
-    display:none;
-  }
-  .br-sp {
-    display:none;
-  }
-  .br-tab {
-    display:block!important;
+
+  .reference li{
+    font-size:8px;
   }
 }
 
@@ -277,6 +273,13 @@ footer{
     padding: 10px 30px;
   }
 
+.logo{
+  float:left;
+}
+  .contact{
+    float: right;
+  }
+
   .noinfection{
     width: 100%;
     line-height:20px;
@@ -284,6 +287,7 @@ footer{
 
   .yellow_box{
     padding: 20px;
+    font-size: 10px;
   }
 
   .anxiety{
@@ -337,8 +341,16 @@ footer{
   }
 
   .reference{
-    font-size: 0.7rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     text-align: center;
+    width: 90vw;
+  }
+
+  .reference ul{
+    width: 80%;
+  }
+
+  .reference li{
+    font-size:4px;
   }
 }

@@ -99,7 +99,7 @@ footer{
 
 /* page2 */
 .container2{
-  margin: 10px 0 40px;
+  margin: 0 0 40px;
 }
 
 label{
@@ -119,9 +119,14 @@ label{
 }
 
 .announcement{
-  float:right;
   font-size: 10px;
-  margin: 0 40px;
+  padding: 30px 0 ;
+  display: inline-block;
+}
+
+#BUTTON2{
+    margin: 0 0 30px;
+    display:inline-block;
 }
 
 /* page3 */
@@ -205,6 +210,16 @@ label{
   width: 400px;
 }
 
+.basal_disease ul{
+  width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+.basal_disease li{
+  width: 350px;
+  list-style: none;
+  margin: 0 25px;
+}
 .page4 .heavy{
   margin: 20px 0;
 }
@@ -221,18 +236,17 @@ label{
   margin: 0 auto;
 }
 
-/* page６ */
+/* pageï¼– */
 .page6title{
   margin: 30px 0;
 }
 
-ul{
+.smallcheckbox ul{
   padding: 0px;
 }
 
-li{
+.smallcheckbox li{
   list-style: none;
-  width: 100px;
   padding: none;
 }
 
@@ -241,7 +255,7 @@ h5{
 }
 
 .pregnant{
-  padding: 30px 0 60px;
+  padding: 30px 0;
 }
 
 .css-fukidashi2 {
@@ -329,7 +343,7 @@ h5{
   display: inline;
 }
 
-/* PC用  */
+/* PCç”¨  */
 @media screen and (min-width: 760px){
   .br-pc {
     display:block!important;
@@ -344,7 +358,7 @@ h5{
   }
 }
 
-  /* タブレット用レスポンシブ */
+  /* ã‚¿ãƒ–ãƒ¬ãƒƒãƒˆç”¨ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ– */
 @media screen and (max-width: 759px){
   .br-pc {
     display:none;
@@ -358,7 +372,7 @@ h5{
     display:block;
   }
 }
-     /* スマホ用レスポンシブ */
+     /* ã‚¹ãƒžãƒ›ç”¨ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ– */
 @media screen and (max-width: 479px){
   .br-pc {
     display:none;
