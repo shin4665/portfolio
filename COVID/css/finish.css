@@ -1,3 +1,112 @@
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+    line-height:1.5;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+nav ul {
+    list-style:none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+    quotes:none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+    text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+    vertical-align:middle;
+}
+/* 以上reset.css */
+
 body{
   text-align: center;
   height: 100%;
@@ -22,100 +131,67 @@ a:hover{
   border-bottom: solid 0.5px rgba(0, 0, 0, 0.4);
 }
 
-.logo{
+.nabvar__logo{
   float:left;
   margin: initial;
 }
 
-.contact{
+.nabvar__contact{
   float: right;
   margin: initial;
 }
-.sns{
-  font-size: 10px;
-  display:flex;
-  width:240px;
-  margin:0 auto;
-  padding: 0 auto;
-}
 
-.sns p {
-  width: 80px;
-}
-
-.section_sns{
-  font-size: 10px;
-  display: flex;
-  margin: 0 auto;
-  width: 360px;
-  align-items:center;
-  justify-content:center;
-}
-.section_sns p {
-  width: 80px;
-}
-
-.profile{
-  margin: 40px 0;
-}
-.profile_box{
-  margin: 40px 0;
-}
-
-#contact p{
-  font-size:12px;
-}
-
-.blank{
-  margin-top: 120px;
-  border-bottom:4px dotted #181716;
-  opacity: 0.6;
-}
-
-.flexbox{
+.body__flexbox{
   margin: 0 auto;
   display: -webkit-flex;
   display:flex;
 }
 
-.right_side{
+.body__flexbox__right-side{
   background-color:#f6f6f4;
   flex: 1;
 }
 
-.center_side{
+.body__flexbox__center-side{
   background-color:white;
   flex: 3;
 }
-.left_side{
+.body__flexbox__left-side{
   background-color:#f6f6f4;
   flex: 1;
 }
 
-.body_column{
-  line-height:30px;
-}
-
-.noinfection{
-  width: 600px;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.border_left{
+.border-left{
   padding: 12px;
   font-size: 20px;
   border-left:10px solid #fa8;
   display:inline-block;
-
+  margin: 20px;
 }
-.border_left2{
-  padding: 10px;
-  border-left:4px solid #fa8;
-  display:inline-block;
+              
+.main__noinfection{
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
 }
 
-.yellow_box{
+.anxiety{
+  margin: 60px 0;
+}
+
+.anxiety a, .consultation a{
+  color: rgba(91, 5, 5, 1);
+}
+
+.main__COVID{
+  margin: 80px 0 ;
+}
+
+.main__COVID__element{
+  margin:10px;
+}
+
+.main__COVID__element__yellow-box{
   border: 3px solid #ffe3b3;
   background-color: #ffffeb;
   border-radius: 8px;
@@ -124,39 +200,29 @@ a:hover{
   font-size: 14px;
 }
 
-.anxiety{
-  margin: 80px 0;
-}
-
-.anxiety a, #consultation a, #consultation2 a {
-  color: rgba(91, 5, 5, 1);
-}
-
-.COVID{
-  margin: 80px 0 ;
-}
-
 .attention{
-  width: 600px;
+  width: 80%;
   text-align: left;
   margin: 0 auto;
 }
 
-#consultation{
-  margin: 80px 0 80px;
+.attention__title{
+  text-align:center;
 }
 
-#consultation2{
-  margin: 80px 0 80px;
+/* main2 */
+.main2__consultation{
+  margin: 40px 0;
 }
 
-.beforeconsul{
-  width: 600px;
+.main2__beforeconsul{
+  width: 80%;
   text-align: left;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.mini_title{
+.main2__beforeconsul__minititle{
   font-size: 18px;
   margin: 20px 0;
   padding: 2px 8px;
@@ -164,25 +230,45 @@ a:hover{
   background-color: rgba(176, 179, 209, 0.39);
 }
 
-.ref{
-  margin: 200px 0 0px;
+/* main3 */
+.main3__must-consultation{
+  margin: 40px 0;
 }
 
-.reference{
+.main3__beforeconsul{
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main3__beforeconsul__minititle{
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 2px 8px;
+  display: inline-block;
+  background-color: rgba(176, 179, 209, 0.39);
+}
+
+.main3__ref{
+  margin: 120px 0 0px;
+}
+
+.main3__ref__reference{
   font-size: 12px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
 }
 
-.reference ul{
-  width: 40vw;
+.main3__ref__reference__item{
+  width: 60%;
   padding: 0;
   margin: 20px auto;
   line-height: 2rem;
 }
 
-.reference li{
+.main3__ref__reference__element{
   list-style: none;
 }
 
@@ -190,8 +276,65 @@ a:hover{
   margin: 80px 0 40px;
 }
 
-.name{
+.main3__profile__border-left{
+  padding: 10px;
+  border-left:4px solid #fa8;
+  display:inline-block;
+}
+
+.main3__profile__name{
   margin: 40px 0;
+}
+
+.profile__blank{
+  margin-top: 120px;
+  border-bottom:4px dotted #181716;
+  opacity: 0.6;
+}
+
+.profile__sns{
+  font-size: 10px;
+  display: flex;
+  margin: 0 auto;
+  width: 360px;
+  align-items:center;
+  justify-content:center;
+}
+
+.profile__sns p {
+  width: 80px;
+}
+
+.footer__sns{
+  font-size: 10px;
+  display:flex;
+  width:240px;
+  margin: 4px auto;
+  padding: 0 auto;
+}
+
+.footer__sns p {
+  width: 80px;
+  margin: 10px;
+}
+
+.profile{
+  margin: 40px 0;
+}
+
+#contact p{
+  font-size:12px;
+}
+
+footer{
+  position:relative;
+  bottom: 0px;
+}
+
+.footer--copyright{
+  width: 280px;
+  font-size: 10px;
+  margin: 0 auto;
 }
 
 #pagetop{
@@ -230,127 +373,207 @@ a:hover{
   text-align: center;
 }
 
-.copyright{
-  width: 280px;
-  font-size: 10px;
-  margin: 0 auto;
-}
-
-footer{
-  position:relative;
-  bottom: 0px;
-}
-
-
 /* タブレット用レスポンシブ */
 @media screen and (max-width: 768px){
+body{
+  font-size: 14px;
+}
 
-  .reference li{
-    font-size:8px;
-  }
+.body__flexbox__right-side{
+  background-color:#f6f6f4;
+  flex: 1;
+}
+
+.body__flexbox__center-side{
+  background-color:white;
+  flex: 8;
+}
+
+.body__flexbox__left-side{
+  background-color:#f6f6f4;
+  flex: 1;
+}
+
+#navbar{
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 50px;
+}
+
+.main__noinfection {
+  width: 90%;
+}
+
+.main2__beforeconsul{
+  width: 90%;
+}
+
+.attention{
+  width: 90%;
+}
+
+.main3__beforeconsul{
+  width: 90%;
+}
+
+.main3__ref__reference__element{
+  font-size:8px;
+}
 }
 
 /* スマホ用レスポンシブ */
 @media screen and (max-width: 479px) {
-  .br-pc {
-    display:none;
-  }
-  .br-sp {
-    display:block!important;
-  }
-  .br-tab {
-    display:none;
-  }
+.br-pc {
+  display:none;
+}
 
-  *{
-    box-sizing: border-box;
-    font-size: 10px;
-    word-wrap: break-word;
-  }
+.br-sp {
+  display:block!important;
+}
 
-  #navbar{
-    line-height: 30px;
-    padding: 10px 30px;
-  }
+.br-tab {
+  display:none;
+}
 
-.logo{
+body{
+  font-size: 10px;
+}
+
+.body__flexbox__right-side{
+    background-color:white;
+  flex:1;
+}
+
+.body__flexbox__center-side{
+  background-color:white;
+  flex: 8;
+}
+
+.body__flexbox__left-side{
+    background-color:white;
+  flex: 1;
+}
+
+#navbar{
+  line-height: 30px;
+  padding: 10px 30px;
+}
+
+.nabvar__logo{
   float:left;
 }
-  .contact{
-    float: right;
-  }
 
-  .noinfection{
-    width: 100%;
-    line-height:20px;
-  }
+.nabvar__contact{
+  float: right;
+}
 
-  .yellow_box{
-    padding: 20px;
-    font-size: 10px;
-  }
+/* main */
+.main__noinfection{
+  width: 100%;
+  line-height:20px;
+}
 
-  .anxiety{
-    margin: 40px 0;
-  }
+.border-left {
+  font-size: 14px;
+}
+.anxiety{
+  margin: 40px 0;
+}
 
-  .anxiety a, #consultation a, #consultation2 a {
-    color: rgba(91, 5, 5, 1);
-  }
+.anxiety a, #consultation a, #consultation2 a {
+  color: rgba(91, 5, 5, 1);
+}
 
-  .COVID{
-    margin: 80px 0 ;
-  }
+.main__COVID__element{
+  margin: 14px 0;
+}
 
-  .attention{
-    text-align: left;
-    margin: 0 auto;
-    width: 100%;
-  }
+.main__COVID__element__yellow-box{
+  padding: 20px;
+  font-size: 10px;
+}
 
-  .attention br{
-    display:none;
-  }
+.attention{
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+}
 
-  #consultation{
-    margin: 40px 0;
-  }
+.attention br{
+  display:none;
+}
 
-  #consultation2{
-    margin: 40px 0;
-  }
+/* main2 */
+.main2__consultation{
+  margin: 40px 0;
+}
 
-  .beforeconsul{
-    margin: 0 auto;
-    width: 100%;
-  }
-  .beforeconsul br{
-    display: none;
-  }
+.main2__beforeconsul{
+  width: 100%;
+}
 
-  .mini_title{
-    font-size: 1.5rem;
-    margin: 20px 0;
-    padding: 2px 8px;
-    display: inline-block;
-    background-color: rgba(176, 179, 209, 0.39);
-  }
+.main2__beforeconsul__minititle {
+  font-size: 16px;
+}
 
-  .ref{
-    margin: 40px auto;
-  }
+.main2__beforeconsul{
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
 
-  .reference{
-    line-height: 2rem;
-    text-align: center;
-    width: 90vw;
-  }
+/* main3 */
+.main3__beforeconsul{
+  width: 100%;
+  padding: 0;
+}
 
-  .reference ul{
-    width: 80%;
-  }
+.main3__beforeconsul br{
+  display: none;
+}
 
-  .reference li{
-    font-size:4px;
-  }
+.main3__beforeconsul__minititle{
+  font-size: 1rem;
+  margin: 20px 10px;
+  padding: 2px 8px;
+  display: inline-block;
+  background-color: rgba(176, 179, 209, 0.39);
+}
+
+.main3__ref{
+  margin: 40px auto;
+}
+
+.main3__ref__reference{
+  line-height: 2rem;
+  text-align: center;
+  width: 90%;
+}
+
+.main3__ref__reference__item{
+  width: 80%;
+}
+
+.main3__ref__reference__element{
+  font-size:4px;
+  line-height: 3;
+}
+
+.section-sns{
+  width: 90%;
+}
+
+.profile__sns{
+  font-size: 10px;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  align-items:center;
+  justify-content:center;
+}
+
+
+.profile__blank {
+  margin-top: 60px;
+}
 }

@@ -1,3 +1,112 @@
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+    line-height:1.5;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+nav ul {
+    list-style:none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+    quotes:none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+    text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+    vertical-align:middle;
+}
+/* 以上reset.css */
+
 html{
   height: 100%;
 }
@@ -26,11 +135,13 @@ a:hover{
   padding: 10px 180px;
   border-bottom: solid 0.5px rgba(0, 0, 0, 0.4);
 }
-.logo{
+
+.nabvar__logo{
   float:left;
   margin: initial;
 }
-.contact{
+
+.nabvar__contact{
   float: right;
   margin: initial;
 }
@@ -39,26 +150,21 @@ a:hover{
   display: none;
 }
 
-h1 {
+.page1__header__h1 {
   margin: 60px auto;
-  padding:0;
-  border:0;
-  outline:0;
-  vertical-align:baseline;
-  background:transparent;
+  font-size: 24px;
 }
 
-.container{
+.page1__container{
   height: 200px;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 
-.box{
+.page1__container__box{
   height: 70px;
   width: 600px;
-  margin: 0 auto;
 }
 
 button{
@@ -79,7 +185,7 @@ button{
   font-size: 10px;
   display:flex;
   width:240px;
-  margin:0 auto;
+  margin: 0 auto 10px;
 }
 
 .sns p {
@@ -92,33 +198,28 @@ button{
   margin: 0 auto;
 }
 
-footer{
-  position:relative;
-  bottom: 0px;
-}
-
 /* page2 */
-.container2{
-  margin: 0 0 40px;
+.page2__container{
+  margin:40px 0;
 }
 
 label{
   cursor:pointer;
 }
 
-.checkbox {
+.page2__checkbox {
   margin: 0 auto;
   width: 330px;
   text-align: left;
 }
 
-.littletitle{
+.page2__checkbox__littletitle{
   width: 200px;
   margin: 16px auto 4px;
   text-align: center;
 }
 
-.announcement{
+.page2__checkbox__announcement{
   font-size: 10px;
   padding: 30px 0 ;
   display: inline-block;
@@ -130,27 +231,9 @@ label{
 }
 
 /* page3 */
-.buttonbox{
-  margin: 0 auto;
-  width: 400px;
-  display: flex;
-}
 
-.container3{
+.page3__container3{
   margin: 80px auto;
-}
-
-.button3{
-  margin: 30px 50px;
-  width: 100px;
-  height:32px;
-  border-radius: 18px;
-  font-size: 12px;
-  color: white;
-  background-color: rgb(80, 179, 184);
-  cursor:pointer;
-  outline: none;
-  user-select: none;
 }
 
 .css-fukidashi {
@@ -203,6 +286,25 @@ label{
   display: inline;
 }
 
+.page3__buttonbox{
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+}
+
+.page3__buttonbox__button3{
+  margin: 30px 50px;
+  width: 100px;
+  height:32px;
+  border-radius: 18px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(80, 179, 184);
+  cursor:pointer;
+  outline: none;
+  user-select: none;
+}
+
 /* page4 */
 #BUTTON4{
   display: flex;
@@ -210,52 +312,37 @@ label{
   width: 400px;
 }
 
-.basal_disease ul{
+.page4__titile{
+  margin: 20px 0;
+}
+
+.page4__basal-disease__block{
   width: 400px;
   margin: 0 auto;
   padding: 0;
 }
-.basal_disease li{
+.page4__basal-disease--element{
   width: 350px;
   list-style: none;
   margin: 0 25px;
 }
-.page4 .heavy{
+.page4__heavy{
   margin: 20px 0;
 }
 
-/* page5 */
-.page5title{
-  margin: 30px 0;
-
+.page4__buttonbox__button{
+  margin: 30px;
 }
 
-.smallcheckbox{
+/* page5 */
+.page5__title{
+  margin: 30px 0;
+}
+
+.page5__smallcheckbox{
   width: 120px;
   text-align: left;
   margin: 0 auto;
-}
-
-/* pageï¼– */
-.page6title{
-  margin: 30px 0;
-}
-
-.smallcheckbox ul{
-  padding: 0px;
-}
-
-.smallcheckbox li{
-  list-style: none;
-  padding: none;
-}
-
-h5{
-  margin: 10px 0;
-}
-
-.pregnant{
-  padding: 30px 0;
 }
 
 .css-fukidashi2 {
@@ -302,7 +389,28 @@ h5{
   display:none;
 }
 
+.page5__heavy{
+  margin: 10px 0;
+}
+
 /* page6 */
+.page6__title{
+  margin: 20px 0 10px;
+}
+
+.page6__smallcheckbox{
+  margin: 10px 0;
+}
+
+.page6__smallcheckbox--item{
+  padding: 0px;
+}
+
+.page6__smallcheckbox--element{
+  list-style: none;
+  padding: none;
+}
+
 .css-fukidashi3 {
   position: relative;
   padding: 0;
@@ -343,129 +451,168 @@ h5{
   display: inline;
 }
 
-/* PCç”¨  */
+.page6__pregnant{
+  padding: 25px 0;
+}
+
+/* PC用 */
 @media screen and (min-width: 760px){
-  .br-pc {
-    display:block!important;
-  }
-
-  .br-sp {
-    display:none;
-  }
-
-  .br-tab {
-    display:none;
-  }
+.br-pc {
+  display:block!important;
 }
 
-  /* ã‚¿ãƒ–ãƒ¬ãƒƒãƒˆç”¨ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ– */
+.br-sp {
+  display:none;
+}
+
+.br-tab {
+  display:none;
+}
+}
+
+/* タブレット用 */
 @media screen and (max-width: 759px){
-  .br-pc {
-    display:none;
-  }
-
-  .br-sp {
-    display:none;
-  }
-
-  .br-tab {
-    display:block;
-  }
+.br-pc {
+  display:none;
 }
-     /* ã‚¹ãƒžãƒ›ç”¨ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ– */
+
+.br-sp {
+  display:none;
+}
+
+.br-tab {
+  display:block;
+}
+#navbar{
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 50px;
+}
+}
+
+/* スマホ用 */
 @media screen and (max-width: 479px){
-  .br-pc {
-    display:none;
-  }
+.br-pc {
+  display:none;
+}
 
-  .br-sp {
-    display:block!important;
-  }
+.br-sp {
+  display:block!important;
+}
 
-  .br-tab {
-    display:none;
-  }
+.br-tab {
+  display:none;
+}
 
-  body{
-    font-size: 10px;
-  }
+body{
+  font-size: 10px;
+}
 
-  #navbar{
-    height: 30px;
-    line-height: 30px;
-    padding: 10px 30px;
-  }
+#navbar{
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 30px;
+}
 
-  .container{
-    height: 150px;
-  }
+.sns{
+  width:220px;
+}
+
+/* page1 */
+.page1__container{
+  height: 150px;
+}
 
 /* page2 */
-  .sns{
-    width:220px;
-  }
+.page2__checkbox {
+  width: 200px;
+}
 
-  .checkbox {
-    margin: 0 auto;
-    width: 330px;
-    text-align: left;
-  }
+/* page3 */
+.page3__buttonbox__button3 {
+  margin: 30px 30px;
+  width: 80px;
+  font-size: 10px;
+}
+.page3__container3 {
+  margin: 60px 0 30px;
+}
 
-  /* page3 */
-  .buttonbox{
-    width: 100vw;
-  }
+.page3__buttonbox{
+  width: 90%;
+  margin: 0 auto;
+}
 
-  .text {
-    width: 100px;
-  }
+.text {
+  width: 100px;
+}
 
-  .fukidashi {
-    width: 30vw;
-    height: 50px;
-    line-height: 25px;
-    top: -76px;
-    left: -75px;
-    font-size: 10px;
-  }
+.fukidashi {
+  width: 30vw;
+  height: 50px;
+  line-height: 25px;
+  top: -76px;
+  left: -75px;
+  font-size: 10px;
+}
 
-  .fukidashi:after {
-    left: 75px;
-    bottom: -19px;
-  }
+.fukidashi:after {
+  left: 75px;
+  bottom: -19px;
+}
 
-  /* page4 */
-  .container4 p {
-    margin: 30px 0;
-  }
+/* page4 */
+.page4__titile{
+  margin: 30px 0;
+}
 
-  .smallcheckbox{
-    width: 120px;
-    text-align: left;
-    margin: 0 auto;
-  }
+.page4__basal-disease__block {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
 
-  .heavy{
-    margin: 30px;
-  }
+.page4__basal-disease--element {
+  margin: 0 auto;
+  width: 200px;
+}
+.smallcheckbox{
+  width: 120px;
+  text-align: left;
+  margin: 0 auto;
+}
 
-  /* page5 */
-  .page6title{
-    margin: 30px 0 0 0;
-  }
+.page4__heavy{
+  margin: 30px;
+}
 
-  ul{
-    padding: 10px 30px;
-    margin:  0 auto;
-  }
+#BUTTON4 {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
 
-  li{
-    width: 60px;
-  }
+.page4__buttonbox__button {
+  margin: 30px 30px;
+  width: 80px;
+  height:32px;
+  border-radius: 18px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(80, 179, 184);
+  cursor:pointer;
+  outline: none;
+  user-select: none;
+}
 
-  .pregnant{
-    padding: 20px 0 20px;
-  }
+/* page5 */
+.page5__title {
+  margin: 30px 30px 10px;
+}
+
+.page5__smallcheckbox {
+  width: 80px;
+}
 
   .fukidashi2 {
     width: 250px;
@@ -478,6 +625,25 @@ h5{
 
   .fukidashi2:after {
     left: 80px;
+  }
+
+  /* page6 */
+  .page6__title{
+    margin: 30px 0 0 0;
+  }
+
+  .page6__smallcheckbox--item{
+    padding: 10px 0;
+    margin:  0 auto;
+    width:  60px;
+  }
+
+  .page6__smallcheckbox--element{
+    width: 60px;
+  }
+
+  .page6__pregnant{
+    padding: 20px 0 20px;
   }
 
   .fukidashi3 {
@@ -493,4 +659,17 @@ h5{
   .fukidashi3:after {
     left: 142px;
   }
+}
+
+.page6__buttonbox--button{
+  margin: 30px 30px;
+  width: 80px;
+  height:32px;
+  border-radius: 18px;
+  font-size: 10px;
+  color: white;
+  background-color: rgb(80, 179, 184);
+  cursor:pointer;
+  outline: none;
+  user-select: none;
 }
